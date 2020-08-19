@@ -1,6 +1,7 @@
 import React from "react";
-import FunctionClick from "./components/FunctionClick";
-import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
+// import FunctionClick from "./components/FunctionClick";
+// import ClassClick from "./components/ClassClick";
 // import Message from "./components/Message";
 // import Counter from "./components/Counter";
 // import Greet from "./components/Greet";
@@ -36,8 +37,10 @@ function App() {
       {/* <Greet name="Drew" color="green" />
       <Welcome name="Drew" color="green" /> */}
 
-      <FunctionClick />
-      <ClassClick />
+      {/* <FunctionClick />
+      <ClassClick /> */}
+
+      <EventBind />
     </div>
   );
 }
