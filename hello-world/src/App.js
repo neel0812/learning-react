@@ -1,8 +1,10 @@
 import React from "react";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
 // import Message from "./components/Message";
 // import Counter from "./components/Counter";
-import Greet from "./components/Greet";
-import Welcome from "./components/Welcome";
+// import Greet from "./components/Greet";
+// import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
 
 function App() {
@@ -31,8 +33,11 @@ function App() {
 
       {/* <Counter /> */}
 
-      <Greet name="Drew" color="green" />
-      <Welcome name="Drew" color="green" />
+      {/* <Greet name="Drew" color="green" />
+      <Welcome name="Drew" color="green" /> */}
+
+      <FunctionClick />
+      <ClassClick />
     </div>
   );
 }
