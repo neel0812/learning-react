@@ -1,5 +1,6 @@
 import React from "react";
-import UserGreeting from "./components/UserGreeting";
+import NameList from "./components/NameList";
+// import UserGreeting from "./components/UserGreeting";
 // import ParentComponent from "./components/ParentComponent";
 // import EventBind from "./components/EventBind";
 // import FunctionClick from "./components/FunctionClick";
@@ -46,7 +47,9 @@ function App() {
 
       {/* <ParentComponent /> */}
 
-      <UserGreeting />
+      {/* <UserGreeting /> */}
+
+      <NameList />
     </div>
   );
 }
