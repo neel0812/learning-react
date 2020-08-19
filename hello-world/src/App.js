@@ -1,8 +1,8 @@
 import React from "react";
 // import Message from "./components/Message";
-import Counter from "./components/Counter";
-// import Greet from "./components/Greet";
-// import Welcome from "./components/Welcome";
+// import Counter from "./components/Counter";
+import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
 
 function App() {
@@ -29,7 +29,10 @@ function App() {
 
       {/* <Message /> */}
 
-      <Counter />
+      {/* <Counter /> */}
+
+      <Greet name="Drew" color="green" />
+      <Welcome name="Drew" color="green" />
     </div>
   );
 }

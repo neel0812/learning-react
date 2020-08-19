@@ -1,11 +1,12 @@
 import React from "react";
 
-const Greet = (props) => {
+const Greet = ({ color, name, children }) => {
   return (
     <div>
-      <h1 style={{ color: props.color }}>Hello {props.name}</h1>
-      {props.children}
+      <h1 style={{ color: color }}>Hello {name}</h1>
+      {children}
     </div>
   );
 };
+
 export default Greet;
