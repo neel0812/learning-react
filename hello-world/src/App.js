@@ -1,5 +1,6 @@
 import React from "react";
-import ParentComponent from "./components/ParentComponent";
+import UserGreeting from "./components/UserGreeting";
+// import ParentComponent from "./components/ParentComponent";
 // import EventBind from "./components/EventBind";
 // import FunctionClick from "./components/FunctionClick";
 // import ClassClick from "./components/ClassClick";
@@ -43,7 +44,9 @@ function App() {
 
       {/* <EventBind /> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+
+      <UserGreeting />
     </div>
   );
 }
