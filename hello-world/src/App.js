@@ -1,5 +1,6 @@
 import React from "react";
-import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
+// import EventBind from "./components/EventBind";
 // import FunctionClick from "./components/FunctionClick";
 // import ClassClick from "./components/ClassClick";
 // import Message from "./components/Message";
@@ -40,7 +41,9 @@ function App() {
       {/* <FunctionClick />
       <ClassClick /> */}
 
-      <EventBind />
+      {/* <EventBind /> */}
+
+      <ParentComponent />
     </div>
   );
 }
