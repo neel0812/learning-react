@@ -1,5 +1,7 @@
 import React from "react";
-import NameList from "./components/NameList";
+import StyleSheets from "./components/StyleSheets";
+import Inline from "./components/Inline";
+// import NameList from "./components/NameList";
 // import UserGreeting from "./components/UserGreeting";
 // import ParentComponent from "./components/ParentComponent";
 // import EventBind from "./components/EventBind";
@@ -10,6 +12,8 @@ import NameList from "./components/NameList";
 // import Greet from "./components/Greet";
 // import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App() {
   return (
@@ -49,7 +53,12 @@ function App() {
 
       {/* <UserGreeting /> */}
 
-      <NameList />
+      {/* <NameList /> */}
+
+      <StyleSheets />
+      <Inline />
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
