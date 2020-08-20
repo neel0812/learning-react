@@ -151,6 +151,15 @@ Lifecycle Methods
     - DOs
       - Make http calls
 
+  - componentWillUnmount()
+    - Method is called right brfore a component is unmounted and destroyed
+    - DOs
+      - Cancel network requests
+      - Remove eventhandlers
+      - Cancel subscriptions
+      - Invalidate timers
+    - DON'Ts
+      - Call setState method
 
 
 */
