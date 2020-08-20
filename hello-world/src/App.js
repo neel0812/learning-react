@@ -112,7 +112,7 @@ Lifecycle Methods
       - Overwrite state
 
   - static getDerivedStateFromProps(props, state)
-    - When state of component depends on changes in props over time.
+    - This method is called everytime when a component rerenders
     - DOs
       - Set the state
     - DON'Ts
@@ -132,6 +132,25 @@ Lifecycle Methods
     - DOs
       - Interact with DOM
       - Make http calls
+
+  - shouldComponentUpdate(nextProps, nextState)
+    - Dictates if the component should rerender or not.
+    - DOs
+      - Performance Optimization (by not rerendering the component)
+    - DON'Ts
+      - Make http calls
+      - call setState method
+
+  - getSnapshotBeforeUpdate(prevProps, prevState)
+    - Called before the changes in virtual DOM are reflcated in the DOM
+    - DOs
+      - Capture information from the DOM
+
+  - componentDidUpdate(prevProps, prevState, snapshot)
+    - This method is called when render is finished in rerender cycles
+    - DOs
+      - Make http calls
+
 
 
 */
