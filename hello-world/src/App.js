@@ -1,4 +1,5 @@
 import React from "react";
+import LifecycleA from "./components/LifecycleA";
 // import StyleSheets from "./components/StyleSheets";
 // import Inline from "./components/Inline";
 // import Form from "./components/Form";
@@ -62,6 +63,8 @@ function App() {
       <h1 className={styles.success}>Success</h1> */}
 
       {/* <Form /> */}
+
+      <LifecycleA />
     </div>
   );
 }
@@ -95,5 +98,40 @@ Lifecycle Methods
   - When there is an error during rerendering in a lifecycle method, or in the constructor or in any child component.
   - static getDerivedStateFromError
   - componentDidCatch
+
+- Methods in detail
+  - constructor(props)
+    - A special function that will get called whenever a new component is created.
+    - DOs
+      - Initialize state
+      - Bind event handlers
+    - DON'Ts
+      - Make http requests
+    - Note
+      - Call super(props)
+      - Overwrite state
+
+  - static getDerivedStateFromProps(props, state)
+    - When state of component depends on changes in props over time.
+    - DOs
+      - Set the state
+    - DON'Ts
+      - Make http requests
+
+  - render()
+    - Required method
+    - DOs
+      - Based on props and state, return jsx.
+    - DON'Ts
+      - Change state, change DOM element, make http calls.
+    - Note
+      - After render method, children component's render method is also called.
+
+  - componentDidMount()
+    - This method is called only once in entire lifecycle. This method is called immediately after component and all its children components are rendered.
+    - DOs
+      - Interact with DOM
+      - Make http calls
+
 
 */
