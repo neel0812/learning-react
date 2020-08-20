@@ -1,6 +1,7 @@
 import React from "react";
-import StyleSheets from "./components/StyleSheets";
-import Inline from "./components/Inline";
+// import StyleSheets from "./components/StyleSheets";
+// import Inline from "./components/Inline";
+import Form from "./components/Form";
 // import NameList from "./components/NameList";
 // import UserGreeting from "./components/UserGreeting";
 // import ParentComponent from "./components/ParentComponent";
@@ -12,8 +13,8 @@ import Inline from "./components/Inline";
 // import Greet from "./components/Greet";
 // import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
-import "./appStyles.css";
-import styles from "./appStyles.module.css";
+// import "./appStyles.css";
+// import styles from "./appStyles.module.css";
 
 function App() {
   return (
@@ -55,10 +56,12 @@ function App() {
 
       {/* <NameList /> */}
 
-      <StyleSheets />
+      {/* <StyleSheets />
       <Inline />
       <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      <h1 className={styles.success}>Success</h1> */}
+
+      <Form />
     </div>
   );
 }
