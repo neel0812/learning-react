@@ -1,7 +1,7 @@
 import React from "react";
 // import StyleSheets from "./components/StyleSheets";
 // import Inline from "./components/Inline";
-import Form from "./components/Form";
+// import Form from "./components/Form";
 // import NameList from "./components/NameList";
 // import UserGreeting from "./components/UserGreeting";
 // import ParentComponent from "./components/ParentComponent";
@@ -61,9 +61,39 @@ function App() {
       <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1> */}
 
-      <Form />
+      {/* <Form /> */}
     </div>
   );
 }
 
 export default App;
+
+/*
+
+Lifecycle Methods
+
+- Mounting
+  - When an instance of a component is created and inserted into the DOM.
+  - constructor
+  - static getDerivedStateFromProps
+  - render
+  - componentDidMount
+
+- Updating
+  - When a component is being rerendered as a result of changes to either its props or state.
+  - static getDerivedStateFromProps
+  - shouldComponentUpdate
+  - render
+  - getSnapshotBeforeUpdate
+  - componentDidUpdate
+
+- Unmounting
+  - When a component is being removed from the DOM.
+  - componentWillUnmount
+
+- Error Handling
+  - When there is an error during rerendering in a lifecycle method, or in the constructor or in any child component.
+  - static getDerivedStateFromError
+  - componentDidCatch
+
+*/
