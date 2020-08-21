@@ -93,4 +93,8 @@ Lifecycle Methods
   - Pure components rerenders only if there is a change in state when setState is changed.
   - shouldComponentUpdate returns true always in regular component but in pure component, it does shallow state and props comparision and based on that it returns true or false.
 
--
+- Memo
+  - PureComponent is for class based components, for functional components, there is memo.
+
+- Ref
+  - To get reference of a DOM element.
