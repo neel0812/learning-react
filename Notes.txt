@@ -1,0 +1,87 @@
+Lifecycle Methods
+
+- Mounting
+  - When an instance of a component is created and inserted into the DOM.
+  - constructor
+  - static getDerivedStateFromProps
+  - render
+  - componentDidMount
+
+- Updating
+  - When a component is being rerendered as a result of changes to either its props or state.
+  - static getDerivedStateFromProps
+  - shouldComponentUpdate
+  - render
+  - getSnapshotBeforeUpdate
+  - componentDidUpdate
+
+- Unmounting
+  - When a component is being removed from the DOM.
+  - componentWillUnmount
+
+- Error Handling
+  - When there is an error during rerendering in a lifecycle method, or in the constructor or in any child component.
+  - static getDerivedStateFromError
+  - componentDidCatch
+
+- Methods in detail
+  - constructor(props)
+    - A special function that will get called whenever a new component is created.
+    - DOs
+      - Initialize state
+      - Bind event handlers
+    - DON'Ts
+      - Make http requests
+    - Note
+      - Call super(props)
+      - Overwrite state
+
+  - static getDerivedStateFromProps(props, state)
+    - This method is called everytime when a component rerenders
+    - DOs
+      - Set the state
+    - DON'Ts
+      - Make http requests
+
+  - render()
+    - Required method
+    - DOs
+      - Based on props and state, return jsx.
+    - DON'Ts
+      - Change state, change DOM element, make http calls.
+    - Note
+      - After render method, children component's render method is also called.
+
+  - componentDidMount()
+    - This method is called only once in entire lifecycle. This method is called immediately after component and all its children components are rendered.
+    - DOs
+      - Interact with DOM
+      - Make http calls
+
+  - shouldComponentUpdate(nextProps, nextState)
+    - Dictates if the component should rerender or not.
+    - DOs
+      - Performance Optimization (by not rerendering the component)
+    - DON'Ts
+      - Make http calls
+      - call setState method
+
+  - getSnapshotBeforeUpdate(prevProps, prevState)
+    - Called before the changes in virtual DOM are reflcated in the DOM
+    - DOs
+      - Capture information from the DOM
+
+  - componentDidUpdate(prevProps, prevState, snapshot)
+    - This method is called when render is finished in rerender cycles
+    - DOs
+      - Make http calls
+
+  - componentWillUnmount()
+    - Method is called right brfore a component is unmounted and destroyed
+    - DOs
+      - Cancel network requests
+      - Remove eventhandlers
+      - Cancel subscriptions
+      - Invalidate timers
+    - DON'Ts
+      - Call setState method
