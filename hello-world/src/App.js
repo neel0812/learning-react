@@ -1,6 +1,8 @@
 import React from "react";
-import FragmentDemo from "./components/FragmentDemo";
-import Table from "./components/Table";
+// import FragmentDemo from "./components/FragmentDemo";
+// import Table from "./components/Table";
+// import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 // import LifecycleA from "./components/LifecycleA";
 // import StyleSheets from "./components/StyleSheets";
 // import Inline from "./components/Inline";
@@ -68,8 +70,10 @@ function App() {
 
       {/* <LifecycleA /> */}
 
-      <FragmentDemo />
-      <Table />
+      {/* <FragmentDemo />
+      <Table /> */}
+
+      <ParentComp />
     </div>
   );
 }
