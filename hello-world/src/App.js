@@ -1,5 +1,6 @@
 import React from "react";
-import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+// import RefsDemo from "./components/RefsDemo";
 // import ParentComp from "./components/ParentComp";
 // import FragmentDemo from "./components/FragmentDemo";
 // import Table from "./components/Table";
@@ -79,7 +80,9 @@ function App() {
 
       {/* <ParentComp /> */}
 
-      <RefsDemo />
+      {/* <RefsDemo /> */}
+
+      <FocusInput />
     </div>
   );
 }
