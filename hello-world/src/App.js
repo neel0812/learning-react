@@ -1,5 +1,6 @@
 import React from "react";
-import FocusInput from "./components/FocusInput";
+import FRParentInput from "./components/FRParentInput";
+// import FocusInput from "./components/FocusInput";
 // import RefsDemo from "./components/RefsDemo";
 // import ParentComp from "./components/ParentComp";
 // import FragmentDemo from "./components/FragmentDemo";
@@ -82,7 +83,9 @@ function App() {
 
       {/* <RefsDemo /> */}
 
-      <FocusInput />
+      {/* <FocusInput /> */}
+
+      <FRParentInput />
     </div>
   );
 }
