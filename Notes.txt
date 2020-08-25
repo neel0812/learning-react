@@ -101,3 +101,6 @@ Lifecycle Methods
 
 - Portals
   - Used to mount element on different DOM element (than id=root)
+
+- Higher Order Components
+  - Used to enhance components

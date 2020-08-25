@@ -1,5 +1,7 @@
 import React from "react";
-import PortalDemo from "./components/PortalDemo";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+// import PortalDemo from "./components/PortalDemo";
 // import FRParentInput from "./components/FRParentInput";
 // import FocusInput from "./components/FocusInput";
 // import RefsDemo from "./components/RefsDemo";
@@ -88,7 +90,10 @@ function App() {
 
       {/* <FRParentInput /> */}
 
-      <PortalDemo />
+      {/* <PortalDemo /> */}
+
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
