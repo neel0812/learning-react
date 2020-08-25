@@ -98,3 +98,6 @@ Lifecycle Methods
 
 - Ref
   - To get reference of a DOM element.
+
+- Portals
+  - Used to mount element on different DOM element (than id=root)
