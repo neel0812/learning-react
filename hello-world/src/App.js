@@ -1,6 +1,8 @@
 import React from "react";
-import ClickCounter from "./components/ClickCounter";
-import HoverCounter from "./components/HoverCounter";
+// import ClickCounter from "./components/ClickCounter";
+// import HoverCounter from "./components/HoverCounter";
+import ClickCounter2 from "./components/ClickCounter2";
+import HoverCounter2 from "./components/HoverCounter2";
 // import PortalDemo from "./components/PortalDemo";
 // import FRParentInput from "./components/FRParentInput";
 // import FocusInput from "./components/FocusInput";
@@ -92,8 +94,11 @@ function App() {
 
       {/* <PortalDemo /> */}
 
-      <ClickCounter name="SHUBHAM" />
-      <HoverCounter />
+      {/* <ClickCounter name="SHUBHAM" /> */}
+      {/* <HoverCounter /> */}
+
+      <ClickCounter2 />
+      <HoverCounter2 />
     </div>
   );
 }
