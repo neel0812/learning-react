@@ -92,7 +92,7 @@ function App() {
 
       {/* <PortalDemo /> */}
 
-      <ClickCounter />
+      <ClickCounter name="SHUBHAM" />
       <HoverCounter />
     </div>
   );
