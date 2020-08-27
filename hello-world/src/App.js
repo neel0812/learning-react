@@ -127,6 +127,8 @@ function App() {
       <UserProvider value="Shubham">
         <ComponentC />
       </UserProvider>
+
+      <ComponentC />
     </div>
   );
 }
