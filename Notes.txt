@@ -104,3 +104,9 @@ Lifecycle Methods
 
 - Higher Order Components
   - Used to enhance components
+
+- Render props
+  - Technique to share functionalities and values among components
+
+- Context
+  -
