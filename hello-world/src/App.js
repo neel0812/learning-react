@@ -3,6 +3,8 @@ import React from "react";
 // import HoverCounter from "./components/HoverCounter";
 import ClickCounter2 from "./components/ClickCounter2";
 import HoverCounter2 from "./components/HoverCounter2";
+import User from "./components/User";
+import Couter2 from "./components/Couter2";
 // import PortalDemo from "./components/PortalDemo";
 // import FRParentInput from "./components/FRParentInput";
 // import FocusInput from "./components/FocusInput";
@@ -97,8 +99,28 @@ function App() {
       {/* <ClickCounter name="SHUBHAM" /> */}
       {/* <HoverCounter /> */}
 
-      <ClickCounter2 />
+      {/* <ClickCounter2 />
       <HoverCounter2 />
+      <User
+        render={(isLoggedIn) => (isLoggedIn ? "Shubham" : "Guest")}
+      /> */}
+
+      <Couter2
+        render={(count, incrementCount) => (
+          <ClickCounter2
+            count={count}
+            incrementCount={incrementCount}
+          />
+        )}
+      />
+      <Couter2
+        render={(count, incrementCount) => (
+          <HoverCounter2
+            count={count}
+            incrementCount={incrementCount}
+          />
+        )}
+      />
     </div>
   );
 }
