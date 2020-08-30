@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import HookMouse from "./components/runEffectsOnce/HookMouse";
+import MouseContainer from "./components/componentWillUnmount/MouseContainer";
 
 // import ClassCounter from "./components/counter/ClassCounter";
 // import HookCounter from "./components/counter/HookCounter";
@@ -29,6 +31,10 @@ function App() {
       {/* <HookCounter /> */}
 
       {/* <HookCounter /> */}
+
+      {/* <HookMouse /> */}
+
+      <MouseContainer />
     </div>
   );
 }
