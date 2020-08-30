@@ -8,7 +8,11 @@ import "./App.css";
 
 // import HookCounterThree from "./components/counterThree/HookCounterThree";
 
-import HookCounterFour from "./components/counterFour/HookCounterFour";
+// import HookCounterFour from "./components/counterFour/HookCounterFour";
+
+// import HookCounter from "./components/useEffect/HookCounter";
+
+// import HookCounter from "./components/conditionalUseEffect/HookCounter";
 
 function App() {
   return (
@@ -20,7 +24,11 @@ function App() {
 
       {/* <HookCounterThree /> */}
 
-      <HookCounterFour />
+      {/* <HookCounterFour /> */}
+
+      {/* <HookCounter /> */}
+
+      {/* <HookCounter /> */}
     </div>
   );
 }
