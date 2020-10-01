@@ -6,7 +6,7 @@ class Welcome extends Component {
 
     return (
       <div>
-        <h1 style={{ color: color }}>Hello {name}</h1>
+        <h1 style={{ color: color }}>Hello Mister {name}</h1>
         {children}
       </div>
     );
